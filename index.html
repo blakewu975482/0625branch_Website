@@ -3,63 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的個人網站222</title>
+  <title>我的作品集網站</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: "Segoe UI", sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f4f8;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f8f9fa;
       color: #333;
     }
     header {
-      background-color: #007acc;
+      background-color: #343a40;
       color: white;
       padding: 1em;
       text-align: center;
     }
+    nav {
+      background-color: #495057;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      padding: 0.5em 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     main {
       padding: 2em;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
-    img {
-      max-width: 100%;
+    .section {
+      margin-bottom: 3em;
+    }
+    .portfolio-item {
+      background-color: white;
       border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      padding: 1em;
+      margin-bottom: 1em;
     }
     footer {
+      background-color: #dee2e6;
       text-align: center;
       padding: 1em;
-      background-color: #eee;
       margin-top: 2em;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>歡迎來到我的網站</h1>
+    <h1>我的作品集</h1>
+    <p>歡迎來到我的個人網站</p>
   </header>
 
+  <nav>
+    <a href="#portfolio">作品</a>
+    <a href="#about">關於我</a>
+    <a href="#contact">聯絡方式</a>
+  </nav>
+
   <main>
-    <h2>關於我^_^</h2>
-    <p>你好！我是正在學習 HTML 的使用者，這是我用純 HTML 做的第一個網站！</p>
+    <section class="section" id="portfolio">
+      <h2>作品集</h2>
+      <div class="portfolio-item">
+        <h3>作品 1：個人部落格</h3>
+        <p>這是一個使用 HTML/CSS 製作的簡易部落格網站。</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>作品 2：Todo 清單</h3>
+        <p>使用 JavaScript 製作的可互動清單，能新增、刪除與打勾項目。</p>
+      </div>
+    </section>
 
-    <h3>我的圖片</h3>
-    <img src="https://picsum.photos/600/300" alt="隨機圖片" />
+    <section class="section" id="about">
+      <h2>關於我</h2>
+      <p>我是一位網頁開發學習者，對 HTML、CSS 和 JavaScript 有濃厚興趣，目前正在打造更多網站作品。</p>
+    </section>
 
-    <h3>我的連結</h3>
-    <ul>
-      <li><a href="https://github.com" target="_blank">GitHub</a></li>
-      <li><a href="https://www.google.com" target="_blank">Google</a></li>
-    </ul>
+    <section class="section" id="contact">
+      <h2>聯絡方式</h2>
+      <p>Email: yourname@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 我的個人網站</p>
+    <p>© 2025 我的作品集網站</p>
   </footer>
+
 </body>
 </html>
